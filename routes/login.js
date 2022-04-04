@@ -5,6 +5,19 @@ const jwt = require("jsonwebtoken");
 const router = express.Router();
 
 router.post("/", async (req, res, next) => {
+  auth(req, res, next);
+});
+
+router.post("/guest", async (req, res, next) => {
+  req.body = {
+    email: process.env.GUEST_USERNAME,
+    password: process.env.GUEST_PASSWORD,
+  };
+  auth(req, res, next);
+});
+
+
+function auth(req, res, next) {
   passport.authenticate("login", async (err, user, info) => {
     try {
       if (err || !user) {
@@ -55,6 +68,6 @@ router.post("/", async (req, res, next) => {
       return next(error);
     }
   })(req, res, next);
-});
+}
 
 module.exports = router;

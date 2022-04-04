@@ -7,7 +7,7 @@
 - [Features](#features)
 - [Code Features](#code-features)
 - [Technology Stack](#technology-stack)
-- [Contributors ✨](#contributors-)
+- [Contributors](#contributors)
 - [License](#license)
   
 # Introduction
@@ -18,10 +18,18 @@ Live demo [_here_](https://n11-bookshelf.netlify.app/)
 
 ### Sample creds
 
-Username : guest_bookshelf@gmail.com \
-Password: G*907ues$#t!
+- For normal user login:  
 
-Project also provide guest login functionality, just check `Sign in as Guest` checkbox and hit `Sign in` button
+    Username : guest_bookshelf@gmail.com \
+    Password : G*907ues$#t!
+
+- For admin login:
+
+    Username : admin_bookshelf@gmail.com \
+    Password : Mnbvcxz@12
+
+Project also provide guest login functionality, just click `LOGIN AS GUEST` button
+
 ## Installation
 
 - Clone this repository to your local machine
@@ -40,6 +48,9 @@ REFRESH_TOKEN_EXPIRE_TIME = // required (refresh token expiry time in ms)
 STRIPE_SECRET_TEST= // required (stripe payment integration account private key)
 AWS_ACCESS_KEY = // required (AWS - S3 account access key for image storage)
 AWS_ACCESS_SECRET =  // required (AWS - S3 account access key for image storage)
+
+GUEST_USERNAME= // required, account username used for guest login
+GUEST_PASSWORD= // required, guest account password
 
 GMAIL_USERNAME =  // required (app account used for sending mails on successful order creation)
 GMAIL_PASSWORD =  // required (app account used for sending mails on successful order creation)
@@ -68,7 +79,7 @@ GMAIL_PASSWORD =  // required (app account used for sending mails on successful 
 ![AWS S3](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)\
 ![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 
-## Contributors ✨
+## Contributors
 
 <a href="https://github.com/Alisha-Mahajan">Alisha Mahajan</a>\
 <a href="https://github.com/SVB-knowmywork">Shubham Bansal</a>

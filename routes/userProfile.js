@@ -76,7 +76,7 @@ router.post("/address", async function (req, res, next) {
         });
       } catch (err) {
         return res.status(ErrorCodes.INTERNAL_SERVER_ERROR).json({
-          message: "error occurred wbhile adding address",
+          message: "Error occurred while adding address",
         });
       }
     } else {
